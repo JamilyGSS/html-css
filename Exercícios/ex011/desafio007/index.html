@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio da imagem flexível</title>
+</head>
+<body>
+    <h1>Imagem Flexível</h1>   
+    <p>Dependendo do tamanho da tela, a imagem se "corta"</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.jpg" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.jpg" type="image/png">
+        <img src="imagens/foto-g.jpg" alt="foto flexível">
+    </picture>
+</body>
+</html>
