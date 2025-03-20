@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="estilos/style.css" media="all">
     <link rel="stylesheet" href="estilos/mobile.css" media="screen and (orientation: portrait)">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
@@ -32,6 +32,15 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam possimus, velit similique praesentium dolores vel sit, quia id vero consequatur ea dicta numquam aliquid odit officiis eos, culpa ratione ducimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dolores sit assumenda dolor et numquam illo totam eos excepturi odit! Voluptatem fugit impedit soluta provident beatae distinctio adipisci molestias velit!</p>
         </section>
     </main>
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 690) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+    </script>
     <script>
         function clickMenu () {
             if (itens.style.display == 'block') {
