@@ -4,42 +4,38 @@
     header>h1 {
         text-align: center;
     }
-    div.container {
-        display: flex;
-        flex-flow: column nowrap;
+    header {
+        flex-flow: column wrap;
         justify-content:center;
-        align-items: center;
-        width: 100%;
     }
-    div.outro {
+    menu {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+        width: 100vw;
+    }
+    a {
         background-color: black;
         color: white;
         text-align: center;
         border-radius: 8px;
-        height: 40px;
-        padding-top: 10px;
-        margin: 0px;
+        padding: 10px;
+        margin-bottom: 10px;
+        text-decoration: none;
+        margin: 5px;
         width: 90%;
-        margin-bottom: 5px;
+    }
+    main {
+        background-color: white;
+        margin: 10px;
+        border-radius: 15px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.49);
+        margin-top: 5px;
+        padding: 10px;
+        width: 94%;
     }
 }
 
-@media screen and (min-width:800px) {
-    div.container {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content:flex-end;
-        width: 100%;
-    }
-    div.outro {
-        background-color: black;
-        color: white;
-        text-align: center;
-        border-radius: 8px;
-        height: 40px;
-        width: 90px;
-        padding-top: 10px;
-    }
-}
+
 
 
